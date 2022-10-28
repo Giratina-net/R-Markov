@@ -1,0 +1,7 @@
+version: "1.0"
+services:
+  bot:
+    build:
+      context: .
+    env_file:
+     - .env

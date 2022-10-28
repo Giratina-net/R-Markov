@@ -1,0 +1,7 @@
+###### Requirements with Version Specifiers ######`
+tweepy == 4.10.0
+opencv-python == 4.6.0.66
+requests == 2.28.1
+mecab==0.996.3
+opencv-contrib-python == 4.6.0.66
+schedule == 1.1.0
