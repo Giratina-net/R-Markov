@@ -8,7 +8,7 @@ def task():
 def task2():
     get.run()
 schedule.every(30).minutes.do(task)
-schedule.every().day.at("0:00").do(task2)
+schedule.every(1).day.do(task2)
 while True:
     schedule.run_pending()
     sleep(1)
