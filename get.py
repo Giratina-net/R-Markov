@@ -25,8 +25,10 @@ def run():
     for text in tweets.data:
         if not "http" in text.text:
             if not "RT" in text.text: 
-                if not "@" in text.text: 
-                    with open('data.txt', 'a', encoding='utf-8') as f:
-                        print(text, file=f)
+                if not "@" in text.text:
+                    if not "#" in text.text: 
+                        if not "ニコニコ動画" in text.text: 
+                            with open('data.txt', 'a', encoding='utf-8') as f:
+                                print(text, file=f)
 
 
